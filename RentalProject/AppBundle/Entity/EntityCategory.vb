@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class EntityCategory
-    Dim connection As New MySqlConnection(MainForm.getInstance().connectionString)
+    ReadOnly connection As New MySqlConnection(MainForm.getInstance().connectionString)
     Shared instance As EntityCategory = Nothing
 
     Public Shared Function getInstance() As EntityCategory
