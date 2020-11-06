@@ -63,4 +63,6 @@
         mainForm.InterfacePanel.Controls.Add(returnDetail)
         returnDetail.BringToFront()
     End Sub
+
+
 End Class

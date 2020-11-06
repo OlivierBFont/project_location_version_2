@@ -147,6 +147,7 @@
     <Compile Include="AppBundle\Model\ModelEquipment.vb" />
     <Compile Include="AppBundle\Model\ModelPerson.vb" />
     <Compile Include="AppBundle\Model\ModelRental.vb" />
+    <Compile Include="AppBundle\Model\ModelReservation.vb" />
     <Compile Include="AppBundle\Model\ModelReturn.vb" />
     <Compile Include="AppBundle\UserControls\Horaire\ItemInfo.vb" />
     <Compile Include="AppBundle\UserControls\ICategorieAutre.Designer.vb">
@@ -263,10 +264,34 @@
     <Compile Include="AppBundle\UserControls\IEquipmentDetails.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AppBundle\UserControls\IReservation.Designer.vb">
+    <Compile Include="AppBundle\UserControls\Reservation\IAddPersonReserv.Designer.vb">
+      <DependentUpon>IAddPersonReserv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IAddPersonReserv.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IAddReservation.Designer.vb">
+      <DependentUpon>IAddReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IAddReservation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IAnnulerReservation.Designer.vb">
+      <DependentUpon>IAnnulerReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IAnnulerReservation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IModifyReservation.Designer.vb">
+      <DependentUpon>IModifyReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IModifyReservation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IReservation.Designer.vb">
       <DependentUpon>IReservation.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppBundle\UserControls\IReservation.vb">
+    <Compile Include="AppBundle\UserControls\Reservation\IReservation.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AppBundle\UserControls\IReturnDetails.Designer.vb">
@@ -297,6 +322,18 @@
       <DependentUpon>INotifCenter.vb</DependentUpon>
     </Compile>
     <Compile Include="AppBundle\UserControls\Notification\INotifCenter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IReservationDetails.Designer.vb">
+      <DependentUpon>IReservationDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IReservationDetails.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IReservSearch.Designer.vb">
+      <DependentUpon>IReservSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Reservation\IReservSearch.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AppBundle\UserControls\Statistique\IStatsMain.Designer.vb">
@@ -335,9 +372,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppBundle\UserControls\Horaire\ITimeSheet.resx">
       <DependentUpon>ITimeSheet.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AppBundle\UserControls\IAddReservation.resx">
-      <DependentUpon>IAddReservation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppBundle\UserControls\ICategorieAutre.resx">
       <DependentUpon>ICategorieAutre.vb</DependentUpon>
@@ -396,7 +430,19 @@
     <EmbeddedResource Include="AppBundle\UserControls\IEquipmentDetails.resx">
       <DependentUpon>IEquipmentDetails.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppBundle\UserControls\IReservation.resx">
+    <EmbeddedResource Include="AppBundle\UserControls\Reservation\IAddPersonReserv.resx">
+      <DependentUpon>IAddPersonReserv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\Reservation\IAddReservation.resx">
+      <DependentUpon>IAddReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\Reservation\IAnnulerReservation.resx">
+      <DependentUpon>IAnnulerReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\Reservation\IModifyReservation.resx">
+      <DependentUpon>IModifyReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\Reservation\IReservation.resx">
       <DependentUpon>IReservation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppBundle\UserControls\IReturnDetails.resx">
@@ -407,6 +453,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppBundle\UserControls\IViewReturns.resx">
       <DependentUpon>IViewReturns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\Reservation\IReservationDetails.resx">
+      <DependentUpon>IReservationDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppBundle\UserControls\Reservation\IReservSearch.resx">
+      <DependentUpon>IReservSearch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

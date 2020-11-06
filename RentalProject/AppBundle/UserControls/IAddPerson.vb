@@ -13,6 +13,8 @@ Public Class IAddPerson
         person = p
     End Sub
 
+   
+
     Private Sub IAddPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TBService.Enabled = False
         TBBureau.Enabled = False

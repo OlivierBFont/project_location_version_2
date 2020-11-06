@@ -13,7 +13,7 @@
     End Sub
 
 
-    Private Sub IReservation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub IReservation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         loadData(EntityReservations.getInstance().getReservation)
     End Sub
 
@@ -31,7 +31,7 @@
         End If
     End Function
 
-    Private Sub DetailsButton_Click(sender As Object, e As EventArgs) Handles ReturnButton.EnabledChanged, DetailsButton.EnabledChanged
+    Private Sub DetailsButton_Click(sender As Object, e As EventArgs) Handles ReturnButton.EnabledChanged, DetailsButton.EnabledChanged
         If DetailsButton.Enabled Then
             WarningLabel.Hide()
         Else
@@ -40,7 +40,7 @@
     End Sub
 
 
-    Private Sub ReservButton_Click(sender As Object, e As EventArgs) Handles ReservButton.Click
+    Private Sub ReservButton_Click(sender As Object, e As EventArgs) Handles ReservButton.Click
         Dim reserv As New IAddReservation(Me)
         reserv.Dock = DockStyle.Fill
         mainForm.InterfacePanel.Controls.Add(reserv)
@@ -54,9 +54,9 @@
             mainForm.InterfacePanel.Controls.Add(annuler)
             annuler.BringToFront()
         End If
-    End Sub
-
-
+    End Sub
+
+
     Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         Dim search As New IReservSearch(mainForm, Me)
         search.Dock = DockStyle.Fill
@@ -64,15 +64,15 @@
         search.BringToFront()
     End Sub
 
-    Private Sub ShowButton_Click(sender As Object, e As EventArgs) Handles ListView1.DoubleClick, DetailsButton.Click
+    Private Sub ShowButton_Click(sender As Object, e As EventArgs) Handles ListView1.DoubleClick, DetailsButton.Click
         If Not String.IsNullOrEmpty(ListView1.Items(ListView1.FocusedItem.Index).SubItems(0).Text) Then
             Dim detail As New IReservationDetails(mainForm, CInt(ListView1.Items(ListView1.FocusedItem.Index).SubItems(0).Text))
             detail.Dock = DockStyle.Fill
             mainForm.InterfacePanel.Controls.Add(detail)
             detail.BringToFront()
         End If
-    End Sub
-
+    End Sub
+
     Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
         If ListView1.Items.Count > 0 Then
             If Not IsNothing(ListView1.FocusedItem) AndAlso ListView1.FocusedItem.Index >= 0 Then
@@ -83,7 +83,7 @@
                 ReturnButton.Enabled = False
             End If
         End If
-    End Sub
-
-
+    End Sub
+
+
 End Class

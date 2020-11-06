@@ -106,6 +106,31 @@ RentalProject
  <param name="commentaires"></param>
  <returns></returns>
 </member>
+<member name="M:RentalProject.ModelReservation.updateEquipmentAvailable(System.String)">
+ <summary>
+ Mets l'équipement qui est retourné disponible.
+ </summary>
+ <param name="id"></param>
+</member>
+<member name="M:RentalProject.ModelReservation.updateEquipmentNonAvailable(System.String)">
+ <summary>
+ Mets l'équipement qui est emprunté non disponible.
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:RentalProject.ModelReservation.updateReservReturnDate(System.Int32,System.String,System.DateTime,System.String)">
+ <summary>
+ Cette fonction est appelé dans l'interface de modification
+ d'emprunt lorsque la date de retour est valide et
+ l'utilisateur appuie sur le bouton sauvegarder.
+ </summary>
+ <param name="id"></param>
+ <param name="duree"></param>
+ <param name="dateRetour"></param>
+ <param name="commentaires"></param>
+ <returns></returns>
+</member>
 <member name="M:RentalProject.IAddPerson.IsEmail(System.String)">
  <summary>
  Cette fonction vérifie que l'adresse courriel est valide.
@@ -296,6 +321,20 @@ RentalProject
  <param name="sender"></param>
  <param name="e"></param>
 </member>
+<member name="M:RentalProject.IAddPersonReserv.IsEmail(System.String)">
+ <summary>
+ Cette fonction vérifie que l'adresse courriel est valide.
+ </summary>
+ <param name="email"></param>
+ <returns></returns>
+</member>
+<member name="M:RentalProject.IAnnulerReservation.IAnnulerReservation_Load(System.Object,System.EventArgs)">
+ <summary>
+ Ce Sub applique les données récupérées dans les champs textes.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 <member name="M:RentalProject.IReturnDetails.IReturnDetails_Load(System.Object,System.EventArgs)">
  <summary>
  Ce Sub applique les données récupérées dans les champs textes.
@@ -317,6 +356,52 @@ RentalProject
  recherche est appuyé selon les paramètres de chercherches entrés.
  </summary>
  <returns></returns>
+</member>
+<member name="M:RentalProject.IReservSearch.loadData(System.Data.DataTable,System.Boolean)">
+ <summary>
+ Cette fonction permet de charger les donnés qui seront affiché à l'utilisateur.
+ </summary>
+ <param name="data"></param>
+ <param name="type"></param>
+ <returns></returns>
+</member>
+<member name="M:RentalProject.IReservSearch.ListView1_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ Ce Sub agit lors d'une modification à la ligne sélectionné et
+ permet d'afficher les détails de l'article choisi.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:RentalProject.IReservSearch.Radio_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Ce sub agit lorsqu'un nouveau boutton radio est choisi
+ et déactive les autres champs text.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:RentalProject.IReservSearch.SearchBoxes_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Ce sub agit lorsque les champs text sont modifié pour
+ débloquer le boutton recherche si les champs contiennent des données.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:RentalProject.IReservSearch.SearchItems">
+ <summary>
+ Cette fonction effectue la recherche lorsque le bouton
+ recherche est appuyé selon les paramètres de chercherches entrés.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:RentalProject.IReservSearch.DetailsButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Affiche l'interface d'informations détaillées de l'article sélectionné.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
 </member>
 </members>
 </doc>
