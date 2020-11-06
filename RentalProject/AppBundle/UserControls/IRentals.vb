@@ -63,7 +63,7 @@
     End Sub
 
     Private Sub RentButton_Click(sender As Object, e As EventArgs) Handles RentButton.Click
-        Dim rent As New IEmprunt(Me)
+        Dim rent As New IAddEmprunt(Me)
         rent.Dock = DockStyle.Fill
         mainForm.InterfacePanel.Controls.Add(rent)
         rent.BringToFront()

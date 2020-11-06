@@ -279,7 +279,7 @@ Partial Class ICategory
         '
         Me.DGVCategory.AllowUserToAddRows = False
         Me.DGVCategory.AllowUserToDeleteRows = False
-        Me.DGVCategory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DGVCategory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGVCategory.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DGVCategory.ColumnHeadersHeight = 29
         Me.DGVCategory.Dock = System.Windows.Forms.DockStyle.Fill

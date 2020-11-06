@@ -338,7 +338,6 @@ C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IPersonDetails.resources
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IPersonSearch.resources
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IRentalsDetails.resources
-C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IEmprunt.resources
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IHome.resources
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IInventory.resources
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IRentals.resources
@@ -356,3 +355,4 @@ C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.exe
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.xml
 C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.pdb
+C:\Users\dacam\Documents\Technique en informatique\Session 5\Multimedia\Prise 2\project_location_version_2\RentalProject\obj\Debug\RentalProject.IAddEmprunt.resources

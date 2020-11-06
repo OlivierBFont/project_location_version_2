@@ -17,7 +17,7 @@
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
-        Dim person As New IAddPerson(New IEmprunt(New IRentals(mainForm)), Me)
+        Dim person As New IAddPerson(New IAddEmprunt(New IRentals(mainForm)), Me)
         person.Dock = DockStyle.Fill
         mainForm.InterfacePanel.Controls.Add(person)
         person.BringToFront()

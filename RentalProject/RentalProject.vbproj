@@ -209,10 +209,10 @@
     <Compile Include="AppBundle\UserControls\IRentalsDetails.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AppBundle\UserControls\IEmprunt.Designer.vb">
-      <DependentUpon>IEmprunt.vb</DependentUpon>
+    <Compile Include="AppBundle\UserControls\IAddEmprunt.Designer.vb">
+      <DependentUpon>IAddEmprunt.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppBundle\UserControls\IEmprunt.vb">
+    <Compile Include="AppBundle\UserControls\IAddEmprunt.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AppBundle\UserControls\IHome.Designer.vb">
@@ -372,8 +372,8 @@
     <EmbeddedResource Include="AppBundle\UserControls\IRentalsDetails.resx">
       <DependentUpon>IRentalsDetails.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppBundle\UserControls\IEmprunt.resx">
-      <DependentUpon>IEmprunt.vb</DependentUpon>
+    <EmbeddedResource Include="AppBundle\UserControls\IAddEmprunt.resx">
+      <DependentUpon>IAddEmprunt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppBundle\UserControls\IHome.resx">
       <DependentUpon>IHome.vb</DependentUpon>
@@ -420,6 +420,9 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.vb</LastGenOutput>
     </EntityDeploy>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>

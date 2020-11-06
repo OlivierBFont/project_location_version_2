@@ -32,28 +32,19 @@ Public Class EntityConnexion
 
         Dim command As New MySqlCommand
         command.Connection = connection
-        command.CommandText = $"Select count(*) from utilisateur where matricule = {matricule} and password = {password}"
+        command.CommandText = $"Select count(*) from utilisateur where matricule = {matricule} and password LIKE '{password}'"
         connection.Open()
 
-        Try
-            Dim result = command.ExecuteScalar()
-            If (result = 1) Then
-                verif = True
-            Else
-                verif = False
-            End If
+        Dim result = command.ExecuteScalar()
 
-            connection.Close()
-            Return verif
-        Catch ex As Exception
-            connection.Close()
-        End Try
+        If (result = 1) Then
+            verif = True
+        Else
+            verif = False
+        End If
 
-
-
-
-
-
+        connection.Close()
+        Return verif
     End Function
 
 End Class
