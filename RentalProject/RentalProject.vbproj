@@ -129,7 +129,7 @@
     <Compile Include="AppBundle\Controllers\ControllerAutoComplete.vb" />
     <Compile Include="AppBundle\Controllers\ControllerDates.vb" />
     <Compile Include="AppBundle\Entity\EntityCategory.vb" />
-    <Compile Include="AppBundle\Entity\EntityConnexion.vb" />
+    <Compile Include="AppBundle\Entity\EntityUser.vb" />
     <Compile Include="AppBundle\Entity\EntityEquipment.vb" />
     <Compile Include="AppBundle\Entity\EntityPerson.vb" />
     <Compile Include="AppBundle\Entity\EntityRental.vb" />
@@ -340,6 +340,12 @@
       <DependentUpon>IStatsMain.vb</DependentUpon>
     </Compile>
     <Compile Include="AppBundle\UserControls\Statistique\IStatsMain.vb" />
+    <Compile Include="AppBundle\UserControls\Utilisateurs\IUsers.Designer.vb">
+      <DependentUpon>IUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppBundle\UserControls\Utilisateurs\IUsers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Model1.Designer.vb">
       <AutoGen>True</AutoGen>

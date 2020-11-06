@@ -1,20 +1,20 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class EntityConnexion
+Public Class EntityUser
     ReadOnly connection As New MySqlConnection(Connexion.getInstance().connectionString)
-    Shared instance As EntityConnexion = Nothing
+    Shared instance As EntityUser = Nothing
 
-    Public Shared Function getInstance() As EntityConnexion
+    Public Shared Function getInstance() As EntityUser
         If IsNothing(instance) Then
-            instance = New EntityConnexion()
+            instance = New EntityUser()
         End If
         Return instance
     End Function
 
-    Public Function getUser() As DataTable
+    Public Function getUsers() As DataTable
         Dim command As New MySqlCommand
         command.Connection = connection
-        command.CommandText = $"Select * from utilisateur"
+        command.CommandText = $"Select matricule, statut from utilisateur"
         connection.Open()
         Dim reader = command.ExecuteReader()
         Dim table As New DataTable("utilisateur")

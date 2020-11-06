@@ -118,4 +118,12 @@
         InterfacePanel.Controls.Add(reserv)
         reserv.BringToFront()
     End Sub
+
+    Private Sub UsersButton_Click(sender As Object, e As EventArgs) Handles UsersButton.Click
+        InterfacePanel.Controls.Clear()
+        Dim users As New IUsers(Me)
+        users.Dock = DockStyle.Fill
+        InterfacePanel.Controls.Add(users)
+        users.BringToFront()
+    End Sub
 End Class

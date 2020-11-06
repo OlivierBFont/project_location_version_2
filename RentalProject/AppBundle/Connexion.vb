@@ -17,7 +17,7 @@
         password = Trim(TBPassword.Text)
 
         If (user.Length > 0 And password.Length > 0) Then
-            Dim verif As Boolean = EntityConnexion.getInstance.verifUser(user, password)
+            Dim verif As Boolean = EntityUser.getInstance.verifUser(user, password)
 
             If (verif = True) Then
 
