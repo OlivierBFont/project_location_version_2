@@ -47,7 +47,7 @@ Partial Class IRentals
         Me.ListView1.FullRowSelect = True
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(0, 0)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(5)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ListView1.MultiSelect = False
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(586, 260)
@@ -74,7 +74,7 @@ Partial Class IRentals
         Me.Panel5.Controls.Add(Me.Label13)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(586, 90)
         Me.Panel5.TabIndex = 1
@@ -99,7 +99,7 @@ Partial Class IRentals
         Me.Panel6.Controls.Add(Me.RentButton)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel6.Location = New System.Drawing.Point(0, 350)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(586, 90)
         Me.Panel6.TabIndex = 2
@@ -126,7 +126,7 @@ Partial Class IRentals
         Me.DetailsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DetailsButton.ForeColor = System.Drawing.Color.White
         Me.DetailsButton.Location = New System.Drawing.Point(0, 0)
-        Me.DetailsButton.Margin = New System.Windows.Forms.Padding(5)
+        Me.DetailsButton.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.DetailsButton.Name = "DetailsButton"
         Me.DetailsButton.Size = New System.Drawing.Size(94, 90)
         Me.DetailsButton.TabIndex = 8
@@ -145,7 +145,7 @@ Partial Class IRentals
         Me.SearchButton.ForeColor = System.Drawing.Color.White
         Me.SearchButton.Image = Global.RentalProject.My.Resources.Resources.baseline_search_white_18dp
         Me.SearchButton.Location = New System.Drawing.Point(261, 0)
-        Me.SearchButton.Margin = New System.Windows.Forms.Padding(5)
+        Me.SearchButton.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.SearchButton.Name = "SearchButton"
         Me.SearchButton.Size = New System.Drawing.Size(94, 90)
         Me.SearchButton.TabIndex = 7
@@ -162,7 +162,7 @@ Partial Class IRentals
         Me.ReturnButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReturnButton.ForeColor = System.Drawing.Color.White
         Me.ReturnButton.Location = New System.Drawing.Point(355, 0)
-        Me.ReturnButton.Margin = New System.Windows.Forms.Padding(5)
+        Me.ReturnButton.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ReturnButton.Name = "ReturnButton"
         Me.ReturnButton.Size = New System.Drawing.Size(121, 90)
         Me.ReturnButton.TabIndex = 6
@@ -180,7 +180,7 @@ Partial Class IRentals
         Me.RentButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RentButton.ForeColor = System.Drawing.Color.White
         Me.RentButton.Location = New System.Drawing.Point(476, 0)
-        Me.RentButton.Margin = New System.Windows.Forms.Padding(5)
+        Me.RentButton.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.RentButton.Name = "RentButton"
         Me.RentButton.Size = New System.Drawing.Size(110, 90)
         Me.RentButton.TabIndex = 5
@@ -192,7 +192,7 @@ Partial Class IRentals
         Me.Panel7.Controls.Add(Me.ListView1)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 90)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(586, 260)
         Me.Panel7.TabIndex = 3
@@ -207,7 +207,7 @@ Partial Class IRentals
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel5)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MinimumSize = New System.Drawing.Size(586, 440)
         Me.Name = "IRentals"
         Me.Size = New System.Drawing.Size(586, 440)

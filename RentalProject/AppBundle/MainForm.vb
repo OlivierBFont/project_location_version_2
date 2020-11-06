@@ -20,13 +20,13 @@
         Return instance
     End Function
 
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click, CloseButton.Click
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles  CloseButton.Click
         If MessageBox.Show("Voulez-vous quitter le programme ?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
         End If
     End Sub
 
-    Private Sub MinimizeButton_Click(sender As Object, e As EventArgs) Handles MinimizeButton.Click
+    Private Sub MinimizeButton_Click(sender As Object, e As EventArgs) 
         Me.WindowState = FormWindowState.Minimized
     End Sub
 

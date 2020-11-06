@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,11 @@ Partial Class MainForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.HeaderBar = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.MinimizeButton = New System.Windows.Forms.Button()
-        Me.ExitButton = New System.Windows.Forms.Button()
         Me.MenuPanel = New System.Windows.Forms.Panel()
         Me.NotifyButton = New System.Windows.Forms.Button()
         Me.StatsButton = New System.Windows.Forms.Button()
@@ -46,13 +44,11 @@ Partial Class MainForm
         '
         Me.HeaderBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.HeaderBar.Controls.Add(Me.Label1)
-        Me.HeaderBar.Controls.Add(Me.MinimizeButton)
-        Me.HeaderBar.Controls.Add(Me.ExitButton)
         Me.HeaderBar.Dock = System.Windows.Forms.DockStyle.Top
         Me.HeaderBar.Location = New System.Drawing.Point(0, 0)
-        Me.HeaderBar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HeaderBar.Margin = New System.Windows.Forms.Padding(2)
         Me.HeaderBar.Name = "HeaderBar"
-        Me.HeaderBar.Size = New System.Drawing.Size(736, 36)
+        Me.HeaderBar.Size = New System.Drawing.Size(1154, 36)
         Me.HeaderBar.TabIndex = 0
         '
         'Label1
@@ -69,36 +65,6 @@ Partial Class MainForm
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Gestion d'Inventaire"
         '
-        'MinimizeButton
-        '
-        Me.MinimizeButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MinimizeButton.Dock = System.Windows.Forms.DockStyle.Right
-        Me.MinimizeButton.FlatAppearance.BorderSize = 0
-        Me.MinimizeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MinimizeButton.Image = Global.RentalProject.My.Resources.Resources.baseline_minimize_black_18dp
-        Me.MinimizeButton.Location = New System.Drawing.Point(650, 0)
-        Me.MinimizeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.MinimizeButton.Name = "MinimizeButton"
-        Me.MinimizeButton.Size = New System.Drawing.Size(43, 36)
-        Me.MinimizeButton.TabIndex = 15
-        Me.MinimizeButton.UseVisualStyleBackColor = True
-        '
-        'ExitButton
-        '
-        Me.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ExitButton.Dock = System.Windows.Forms.DockStyle.Right
-        Me.ExitButton.FlatAppearance.BorderSize = 0
-        Me.ExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ExitButton.Image = Global.RentalProject.My.Resources.Resources.baseline_clear_black_18dp
-        Me.ExitButton.Location = New System.Drawing.Point(693, 0)
-        Me.ExitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(43, 36)
-        Me.ExitButton.TabIndex = 17
-        Me.ExitButton.UseVisualStyleBackColor = True
-        '
         'MenuPanel
         '
         Me.MenuPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(139, Byte), Integer))
@@ -113,9 +79,9 @@ Partial Class MainForm
         Me.MenuPanel.Controls.Add(Me.RentalsButton)
         Me.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.MenuPanel.Location = New System.Drawing.Point(0, 36)
-        Me.MenuPanel.Margin = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.MenuPanel.Margin = New System.Windows.Forms.Padding(8)
         Me.MenuPanel.Name = "MenuPanel"
-        Me.MenuPanel.Size = New System.Drawing.Size(150, 440)
+        Me.MenuPanel.Size = New System.Drawing.Size(150, 542)
         Me.MenuPanel.TabIndex = 1
         '
         'NotifyButton
@@ -129,7 +95,7 @@ Partial Class MainForm
         Me.NotifyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NotifyButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NotifyButton.Location = New System.Drawing.Point(0, 329)
-        Me.NotifyButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.NotifyButton.Margin = New System.Windows.Forms.Padding(2)
         Me.NotifyButton.Name = "NotifyButton"
         Me.NotifyButton.Size = New System.Drawing.Size(150, 47)
         Me.NotifyButton.TabIndex = 9
@@ -147,7 +113,7 @@ Partial Class MainForm
         Me.StatsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.StatsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatsButton.Location = New System.Drawing.Point(0, 282)
-        Me.StatsButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.StatsButton.Margin = New System.Windows.Forms.Padding(2)
         Me.StatsButton.Name = "StatsButton"
         Me.StatsButton.Size = New System.Drawing.Size(150, 47)
         Me.StatsButton.TabIndex = 8
@@ -165,7 +131,7 @@ Partial Class MainForm
         Me.TimesheetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.TimesheetButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TimesheetButton.Location = New System.Drawing.Point(0, 235)
-        Me.TimesheetButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TimesheetButton.Margin = New System.Windows.Forms.Padding(2)
         Me.TimesheetButton.Name = "TimesheetButton"
         Me.TimesheetButton.Size = New System.Drawing.Size(150, 47)
         Me.TimesheetButton.TabIndex = 7
@@ -183,7 +149,7 @@ Partial Class MainForm
         Me.ReservationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ReservationButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReservationButton.Location = New System.Drawing.Point(0, 188)
-        Me.ReservationButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ReservationButton.Margin = New System.Windows.Forms.Padding(2)
         Me.ReservationButton.Name = "ReservationButton"
         Me.ReservationButton.Size = New System.Drawing.Size(150, 47)
         Me.ReservationButton.TabIndex = 6
@@ -200,8 +166,8 @@ Partial Class MainForm
         Me.CloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CloseButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CloseButton.Location = New System.Drawing.Point(0, 393)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CloseButton.Location = New System.Drawing.Point(0, 495)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.Size = New System.Drawing.Size(150, 47)
         Me.CloseButton.TabIndex = 3
@@ -219,7 +185,7 @@ Partial Class MainForm
         Me.PersonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PersonButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PersonButton.Location = New System.Drawing.Point(0, 141)
-        Me.PersonButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PersonButton.Margin = New System.Windows.Forms.Padding(2)
         Me.PersonButton.Name = "PersonButton"
         Me.PersonButton.Size = New System.Drawing.Size(150, 47)
         Me.PersonButton.TabIndex = 2
@@ -237,7 +203,7 @@ Partial Class MainForm
         Me.InventoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.InventoryButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InventoryButton.Location = New System.Drawing.Point(0, 94)
-        Me.InventoryButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.InventoryButton.Margin = New System.Windows.Forms.Padding(2)
         Me.InventoryButton.Name = "InventoryButton"
         Me.InventoryButton.Size = New System.Drawing.Size(150, 47)
         Me.InventoryButton.TabIndex = 1
@@ -255,7 +221,7 @@ Partial Class MainForm
         Me.ReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ReturnButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReturnButton.Location = New System.Drawing.Point(0, 47)
-        Me.ReturnButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ReturnButton.Margin = New System.Windows.Forms.Padding(2)
         Me.ReturnButton.Name = "ReturnButton"
         Me.ReturnButton.Size = New System.Drawing.Size(150, 47)
         Me.ReturnButton.TabIndex = 5
@@ -273,7 +239,7 @@ Partial Class MainForm
         Me.RentalsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RentalsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RentalsButton.Location = New System.Drawing.Point(0, 0)
-        Me.RentalsButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RentalsButton.Margin = New System.Windows.Forms.Padding(2)
         Me.RentalsButton.Name = "RentalsButton"
         Me.RentalsButton.Size = New System.Drawing.Size(150, 47)
         Me.RentalsButton.TabIndex = 0
@@ -285,24 +251,23 @@ Partial Class MainForm
         Me.InterfacePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(187, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.InterfacePanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.InterfacePanel.Location = New System.Drawing.Point(150, 36)
-        Me.InterfacePanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.InterfacePanel.Margin = New System.Windows.Forms.Padding(2)
         Me.InterfacePanel.Name = "InterfacePanel"
-        Me.InterfacePanel.Size = New System.Drawing.Size(586, 440)
+        Me.InterfacePanel.Size = New System.Drawing.Size(1004, 542)
         Me.InterfacePanel.TabIndex = 2
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(736, 476)
+        Me.ClientSize = New System.Drawing.Size(1154, 578)
         Me.Controls.Add(Me.InterfacePanel)
         Me.Controls.Add(Me.MenuPanel)
         Me.Controls.Add(Me.HeaderBar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MainForm"
-        Me.Text = "MainForm"
+        Me.Text = "CEGEP"
         Me.HeaderBar.ResumeLayout(False)
         Me.HeaderBar.PerformLayout()
         Me.MenuPanel.ResumeLayout(False)
@@ -311,8 +276,6 @@ Partial Class MainForm
     End Sub
 
     Friend WithEvents HeaderBar As Panel
-    Friend WithEvents MinimizeButton As Button
-    Friend WithEvents ExitButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents MenuPanel As Panel
     Friend WithEvents InterfacePanel As Panel

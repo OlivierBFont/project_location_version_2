@@ -2,10 +2,10 @@
 
 Public Class IAddPerson
 
-    Dim rent As IEmprunt
+    Dim rent As IAddEmprunt
     Dim person As IPerson
 
-    Sub New(r As IEmprunt, p As IPerson)
+    Sub New(r As IAddEmprunt, p As IPerson)
         ' This call is required by the designer.
         InitializeComponent()
         ' Add any initialization after the InitializeComponent() call.

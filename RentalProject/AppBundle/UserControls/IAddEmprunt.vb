@@ -1,6 +1,6 @@
 ﻿Imports System.Text.RegularExpressions
 Imports MySql.Data.MySqlClient
-Public Class IEmprunt
+Public Class IAddEmprunt
 
     Public connectionString = $"{MainForm.getInstance.connectionString}Convert Zero Datetime=True"
     Dim connection As New MySqlConnection(connectionString)
